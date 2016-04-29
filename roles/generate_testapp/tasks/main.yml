@@ -31,7 +31,7 @@
 
 - name: Create entity
   uri: url=http://localhost:8080/yourapp/yourentities method=POST
-       body='{"myattr":"mymessage"}' HEADER_Content-Type="application/json" status_code=201
+       body='{"id":0, "myattr":"mymessage"}' HEADER_Content-Type="application/json" status_code=201
 
 - name: Create entity with empty id (simulating AngularJS behavior)
   uri: url=http://localhost:8080/yourapp/yourentities method=POST
