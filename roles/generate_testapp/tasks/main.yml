@@ -21,7 +21,7 @@
   sudo: false
 
 - name: Run application
-  shell: chdir=/tmp/testapp nohup ./gradlew :testapp:run >app.log 2>&1 &
+  shell: chdir=/tmp/testapp nohup ./gradlew :yourapp:run >app.log 2>&1 &
   sudo: false
   async: 10
   poll: 0
